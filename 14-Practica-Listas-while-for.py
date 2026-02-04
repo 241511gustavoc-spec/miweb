@@ -1,10 +1,13 @@
 animales=["perro","gato","jirafa","cochino","jaguar","león","Oveja","Caballo","Tortuga","Ave"]
 familia=["Julieta","Janeli","Tadeo","Gustavo"]
 
-i=20
-while i<=100:
-    print(i)
-    i=i+20
+i=10
 
-for fam in familia:
-    print(fam)
+while i <=50:
+    print(i)
+    i=i+5
+
+for mascotas in animales:
+    print(mascotas)
+
+print(len(animales))
