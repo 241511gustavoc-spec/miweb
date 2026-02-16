@@ -6,6 +6,8 @@ while True:
     print("2. Agregar animales ➕")
     print("3. Borrar Lista 🗑️")
     print("4. Salir 🔚")
+    print("5. Ver total de Animales 📊 ")
+    print("6. Guardar lista 💾")
 
     opc=input("Elija Una opción: ")
 
@@ -39,6 +41,23 @@ while True:
         if preg=="s":
             animales.clear()
             print("Lista Vaciada 🗑️")
+
+    elif opc == "5":
+        print("📊 Total de animales guardados: ", len(animales))
+        continue
+
+    elif opc == "6":
+         if len(animales)==0:
+             print("lista vacia No existen archivos para guardar")
+
+         else: 
+            with open("historial_Animales.txt", "w") as archivo:
+                for lista in animales:
+                    archivo.write(lista + "\n")
+
+            print("💾 Tokis.txt")
+            continue
+
     else:
         print("Opción invalida")
         continue

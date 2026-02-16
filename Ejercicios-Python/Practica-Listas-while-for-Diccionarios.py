@@ -9,14 +9,18 @@ while i <=20:
     print(i)
     i=i+1
 
+
+#**********************************************
 for indice, Ani in enumerate(animales) :#para enlistar los elementos junto a su indice o posición.
     print(indice,Ani)
 
+#**************************************************
 #in zip: Muestra la información de dos listas diferentes.
 for persona, animal in zip(familia,animales):
     print("El animal favorito de",persona,"es",animal)
 
 
+#************************************************
 equipos = {
     "Router": "192.168.1.1",
     "Servidor": "192.168.1.10",
@@ -34,3 +38,4 @@ for clave in equipos:
 for valor in equipos.values():
     print(valor)
 
+#*************************************************************
